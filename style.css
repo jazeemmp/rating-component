@@ -1,0 +1,115 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --lightgrey: hsl(217, 12%, 63%);
+  --darkblue: hsl(214, 18%, 15%);
+  --veryblue: hsl(216, 12%, 8%);
+  --btncolor: hsl(212, 16%, 21%);
+  --ffamily: "Overpass", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--veryblue);
+  font-family: var(--ffamily);
+}
+.rate-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  transition: transform 0.6s;
+}
+.card {
+  color: var(--white);
+  background-color: var(--darkblue);
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+  width: 400px;
+  gap: 30px;
+  overflow: hidden;
+}
+.icon {
+  padding: 15px;
+  border-radius: 50%;
+  background-color: var(--btncolor);
+  margin: 10px 0;
+}
+.head {
+  font-size: 1.7em;
+  font-weight: 700;
+  margin: 10px 0;
+}
+.para {
+  font-size: 15px;
+  color: var(--lightgrey);
+  width: 350px;
+  line-height: 22px;
+}
+.rate-button .btn {
+  background-color: var(--btncolor);
+  border: 0;
+  outline: 0;
+  color: var(--white);
+  padding: 15px 20px;
+  margin: 20px 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
+.rate-button .btn:hover {
+  background-color: var(--orange);
+}
+.submit-btn {
+  background-color: var(--orange);
+  width: 100%;
+  border: 0;
+  outline: 0;
+  border-radius: 50px;
+  padding: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: var(--white);
+}
+.btn.active {
+  background-color: var(--white);
+  color: #000;
+}
+
+/* thanks-section */
+.thanks-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.8s;
+}
+.selection {
+  background-color: var(--btncolor);
+  color: var(--orange);
+  padding: 4px 15px;
+  border-radius: 20px;
+  margin: 20px;
+  font-size: 15px;
+}
+.para-two {
+  color: var(--lightgrey);
+  width: 340px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+}
